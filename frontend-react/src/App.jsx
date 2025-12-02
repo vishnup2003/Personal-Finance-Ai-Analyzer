@@ -1066,8 +1066,8 @@ function App() {
                         fontSize: "0.9rem",
                       }}
                     >
-                      Great! If you follow the recommended limits,{" "}
-                      <strong>{plannerResult.goalName}</strong> you’ll be able to easily afford the phone this month. 🎯
+                      Great! If you follow the recommended limits, you’ll be able to easily afford{" "}
+                      <strong>{plannerResult.goalName}</strong> this month. 🎯
                     </p>
                   ) : (
                     <p

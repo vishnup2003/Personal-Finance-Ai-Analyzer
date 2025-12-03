@@ -148,14 +148,14 @@ function App() {
     setAuthError("");
     const stored = localStorage.getItem("finance_ai_user");
     if (!stored) {
-      setAuthError("Pehle signup kijiye.");
+      setAuthError("Signup First.");
       return;
     }
     const user = JSON.parse(stored);
     if (user.email === authEmail && user.password === authPassword) {
       setIsLoggedIn(true);
     } else {
-      setAuthError("Galat email/password.");
+      setAuthError("Wrong email/password.");
     }
   }
 
@@ -216,7 +216,7 @@ function App() {
   async function handleSaveExpense(e) {
     e.preventDefault();
     if (!amount || !description || !date || !category) {
-      setError("Saare fields bharna zaroori hai.");
+      setError("Required to fill all fields.");
       return;
     }
     try {
